@@ -4,6 +4,23 @@ READ-ME
 3/24/2015
 Michael Rogove
 mrogove@gmail.com
+
+
+//////////////////////////////////
+TO DO LOG:
+3-31-2015 MR
+	-- Update RESULTS table with new results.
+		Format with Sublime.
+	-- Remove the doublelist logic. 
+		Reinstate part of deprecated returnMatches proc such that only 1 appearance of each match.
+	-- Add additional column to play_priority
+	-- Add proc to take diff of team rankings (as provided by ZM), insert into table.
+	-- Draw only 3 unique matches. Use ROWNUM > X logic. Options:
+		1) Janky: create new table. Insert into, delete from old.
+		2) Better: create cursor.
+		3) Worst: Do this manually. This may have to be done in the future anyway 
+			(if a team cancels, other unforseen matchday events)
+
 //////////////////////////////////
 DESCRIPTION:
 executing "full_script.sql" should create and execute 
